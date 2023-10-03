@@ -6,15 +6,22 @@ class ProductManager {
         this.path = path;
     }
 
-    // TODO:  agregar la validacion del codigo
     async addProducts(product) {
         const { title, description, price, thumbnail, code, stock } = product;
+        const products = await getJSONFromFile(this.path)
 
         if (!title || !description || !price || !thumbnail || !code || !stock) {
             throw new Error('All fields are required.');
         }
 
-        const products = await getJSONFromFile(this.path)
+        // validacion de que el campo code no se repita
+        let existingCode = products.find (product => product.code === code);
+        if(existingCode) {
+            console.log('El codigo de producto ingresado ya existe');
+            return;
+        }
+
+
         const id = products.length + 1;
         const newProduct = { id, title, description, price, thumbnail, code, stock };
         products.push(newProduct);
@@ -34,7 +41,7 @@ class ProductManager {
             console.error('Sorry! We did not found that id');
             return null;
         }
-        return console.log(existingId)
+        return existingId
     }
 
     async updateProduct(id, newTitle, newDescription, newPrice, newThumbnail, newCode, newStock) {
@@ -155,24 +162,24 @@ async function saveJSONFromFile(path, data) {
 const pruebaDesafio = async () => {
 
     try {
-         const productManager = new ProductManager('./products.json');
+        const productManager = new ProductManager('../products.json');
+        // await productManager.addProducts({
+        //     title: "producto prueba",
+        //     description: "Este es un producto prueba",
+        //     price: 200,
+        //     thumbnail: "sin imagen",
+        //     code: "abc123",
+        //     stock: 25,
+        // });
 
-        await productManager.addProducts({
-            title: "producto prueba",
-            description: "Este es un producto prueba",
-            price: 200,
-            thumbnail: "sin imagen",
-            code: "abc123",
-            stock: 25,
-        });
         const products = await productManager.getProducts();
-        console.log("getProdcuts", 'Here are the products:', products);
+        // console.log("getProdcuts", 'Here are the products:', products);
 
-        productManager.getProductsById() // ingresar Id a buscar
-        productManager.deleteProductsById() // ingresar Id a borrar
-        productManager.updateProduct() // ingresar los valrores a actualizar por props (id que se quiere modificar, 'Nuevo Titulo', 'Nueva descripcion', 500, 'Nueva Ruta', 'NuevoCodigo123", 30)
-        productManager.updateProductField (2,'title', 'Actualizo el titulo solamente2') // ingresar el id, el nombre y el valor a actualizar por props (id que se quiere modificar, 'title', 'Actualizo el titulo solamente' )
-        // productManager.deleteProductsFile();
+        // productManager.getProductsById() // ingresar Id a buscar
+        // productManager.deleteProductsById() // ingresar Id a borrar
+        // productManager.updateProduct() // ingresar los valrores a actualizar por props (id que se quiere modificar, 'Nuevo Titulo', 'Nueva descripcion', 500, 'Nueva Ruta', 'NuevoCodigo123", 30)
+        // productManager.updateProductField (2,'title', 'Actualizo el titulo solamente2') // ingresar el id, el nombre y el valor a actualizar por props (id que se quiere modificar, 'title', 'Actualizo el titulo solamente' )
+        // // productManager.deleteProductsFile();
 
     } catch (error) {
         console.error(' Ha ocurrido un error: ', error.message)
@@ -181,4 +188,6 @@ const pruebaDesafio = async () => {
 }
 
 pruebaDesafio()
+
+module.exports = ProductManager;
 
