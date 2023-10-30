@@ -1,0 +1,54 @@
+{{!-- Muestro lista de Productos con socket --}}
+<h1>Listado de Productos en Tiempo Real</h1>
+<ul id="showProductList"></ul>
+
+{{!-- Formulario para crear nuevo producto --}}
+
+  <div class="container mt-5">
+    <h1>Formulario Para el Ingreso de Productos</h1>
+    <form id="addProductsForm" action="/api/products" method="POST">
+      <div class="form-group">
+        <label for="title">Título:</label>
+        <input type="text" class="form-control" id="title" name="title">
+      </div>
+      <div class="form-group">
+        <label for="description">Descripción:</label>
+        <textarea class="form-control" id="description" name="description" rows="3"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="price">Precio:</label>
+        <input type="text" class="form-control" id="price" name="price">
+      </div>
+      <div class="form-group">
+        <label for="stock">Stock:</label>
+        <input type="text" class="form-control" id="stock" name="stock">
+      </div>
+      <div class="form-group">
+        <label for="category">Categoría:</label>
+        <input type="text" class="form-control" id="category" name="category">
+      </div>
+      <div class="form-group">
+        <label for="code">Código:</label>
+        <input type="text" class="form-control" id="code" name="code">
+      </div>
+      <button type="submit" class="btn btn-primary">Guardar Producto</button>
+    </form>
+  </div>
+
+
+
+{{!-- Eliminar Productos --}}
+
+    <h2>Eliminar Producto:</h2>
+      <p>(Inserte el id del producto que desea eliminar.)</p>
+      <form id="realTimeFormDelete" action="/api/products" method="DELETE">
+        <input type="text" id="id" name="id">
+        <input type="submit" value="Enviar">
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/realTimeProducts.js"></script>
