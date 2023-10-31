@@ -80,7 +80,7 @@ router.put('/products/:pid', async (req, res) => {
 
 router.delete('/products/:pid', async (req, res) => {
     try {
-        const productId = parseInt(req.params.pid)
+        const productId = req.params.pid;
         const success = await productManager.deleteProductsById(productId)
 
         if (!success) {

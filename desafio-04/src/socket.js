@@ -20,16 +20,33 @@ export const init = (httpServer) => {
     io.on("connection", async (socketClient) => {
       console.log("Cliente conectado 💪 ", socketClient.id);
   
+      // muestro lista de productos
       socketClient.emit("listProducts", JSON.stringify(products));
-    //   socketClient.on("addProduct", async (newProduct) => {
-    //     await productManager.addProduct(newProduct);
-    //     // console.log(products);
-    //     io.emit("listProducts", products);
-    //   });
-    //   socketClient.on("deleteProductById", async (idToDelete) => {
-    //     await productManager.deleteProduct(idToDelete);
-    //     io.emit("listProducts", products);
-    //   });
+
+      // agrego nuevos productos
+      socketClient.on("new-product", async (newProduct) => {
+        try {
+          await productManager.addProducts(newProduct);
+          io.emit("listProducts", await productManager.getProducts());
+          socketClient.emit("productAddedSuccessfully");
+        } catch (error) {
+          socketClient.emit("productError", error.message);
+        }
+      });
+      
+      // borrro productos
+      socketClient.on("deleteProductById", async (idToDelete) => {
+        try {
+            await productManager.deleteProductsById(idToDelete);
+            io.emit("listProducts", products);
+            socketClient.emit("productDeletedSuccessfully");
+        }catch (error) {
+            socketClient.emit("productError", error.message);
+          }
+      });
+
+
+      
       socketClient.on("disconnect", () => {
         console.log(`Se ha desconectado el cliente : ${socketClient.id} 😔`);
       });
@@ -37,4 +54,3 @@ export const init = (httpServer) => {
   
     console.log("server socket running");
   };
-  

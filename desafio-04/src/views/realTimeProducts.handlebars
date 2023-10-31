@@ -20,6 +20,10 @@
         <input type="text" class="form-control" id="price" name="price">
       </div>
       <div class="form-group">
+        <label for="status">Precio:</label>
+        <input type="text" class="form-control" id="status" name="status" placeholder="Please indicate AVAILABLE OR SOON FOR SALE ">
+      </div>
+      <div class="form-group">
         <label for="stock">Stock:</label>
         <input type="text" class="form-control" id="stock" name="stock">
       </div>
@@ -31,7 +35,7 @@
         <label for="code">Código:</label>
         <input type="text" class="form-control" id="code" name="code">
       </div>
-      <button type="submit" class="btn btn-primary">Guardar Producto</button>
+      <button type="submit" class="btn btn-primary">Save Product</button>
     </form>
   </div>
 
@@ -39,16 +43,21 @@
 
 {{!-- Eliminar Productos --}}
 
+ <div>
     <h2>Eliminar Producto:</h2>
-      <p>(Inserte el id del producto que desea eliminar.)</p>
-      <form id="realTimeFormDelete" action="/api/products" method="DELETE">
-        <input type="text" id="id" name="id">
-        <input type="submit" value="Enviar">
+    <p>(Inserte el ID del producto que desea eliminar.)</p>
+    <form id="formDelete" action="/api/products" method="DELETE">
+        <input type="text" id="idDelete" name="idDelete">
+        <input type="submit" value="Delete Product">
+    </form>
+</div>
 
 
 
 
 
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="/socket.io/socket.io.js"></script>
 <script src="/js/realTimeProducts.js"></script>

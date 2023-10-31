@@ -136,5 +136,105 @@
 			"dos"
 		],
 		"code": "aaaa3aaa"
+	},
+	{
+		"id": "7715776e-7a6e-41a6-8baa-4927b9bf90f3",
+		"title": "Titulo prueba",
+		"description": "descripcion",
+		"price": "12345",
+		"status": "AVAILABLE",
+		"stock": "1",
+		"category": "prueba",
+		"code": "12"
+	},
+	{
+		"id": "57068c81-229a-4095-91bb-ec3f510c0c70",
+		"title": "titulito",
+		"description": "qwer",
+		"price": "1234567890",
+		"status": "AVAILABLE",
+		"stock": "2",
+		"category": "cat",
+		"code": "123"
+	},
+	{
+		"id": "5b25e8fe-b4fa-4fe4-a298-a84a2677dff4",
+		"title": "Titulo ",
+		"description": "qwe",
+		"price": "1",
+		"status": "1",
+		"stock": "1",
+		"category": "1",
+		"code": "123234567"
+	},
+	{
+		"id": "6d1f6288-9bff-4d8c-afe1-f89cfd7f5d2b",
+		"title": "Titulo ",
+		"description": "qwe",
+		"price": "1",
+		"status": "1",
+		"stock": "1",
+		"category": "1",
+		"code": "12323456777"
+	},
+	{
+		"id": "a5f6fdec-dd78-4ee2-bd55-54a5a402876a",
+		"title": "Titulo ",
+		"description": "qwe",
+		"price": "1",
+		"status": "1",
+		"stock": "1",
+		"category": "1",
+		"code": "123234567779"
+	},
+	{
+		"id": "9e4e67b9-d8ee-4626-8877-b2bcfb0bbe82",
+		"title": "5Titulo ",
+		"description": "qwe",
+		"price": "1",
+		"status": "1",
+		"stock": "1",
+		"category": "1",
+		"code": "1232345677790"
+	},
+	{
+		"id": "a2afd3b1-9af0-4232-93d6-0e5edb853f54",
+		"title": "1Titulo ",
+		"description": "qwe",
+		"price": "1",
+		"status": "1",
+		"stock": "1",
+		"category": "1",
+		"code": "12323456777901"
+	},
+	{
+		"id": "b1c51a07-a491-4440-bc78-80d1b3ed23be",
+		"title": "swal",
+		"description": "e",
+		"price": "1",
+		"status": "1",
+		"stock": "1",
+		"category": "1",
+		"code": "12345459"
+	},
+	{
+		"id": "075e24a7-1e71-421b-89f0-054071acb05d",
+		"title": "swal2",
+		"description": "e",
+		"price": "1",
+		"status": "1",
+		"stock": "1",
+		"category": "1",
+		"code": "12345459e"
+	},
+	{
+		"id": "80a071d8-4eb0-41eb-a063-1311c6621817",
+		"title": "swal2",
+		"description": "e",
+		"price": "1",
+		"status": "1",
+		"stock": "1",
+		"category": "1",
+		"code": "12345459e4"
 	}
 ]
