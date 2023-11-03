@@ -1,5 +1,5 @@
 {
-  "name": "desafio-04",
+  "name": "desafio-websockets-handlebars",
   "version": "1.0.0",
   "description": "",
   "main": "src/server.js",

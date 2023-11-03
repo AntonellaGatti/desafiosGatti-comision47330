@@ -1,0 +1,240 @@
+[
+	{
+		"id": 1,
+		"title": "Producto 1",
+		"description": "Este es un producto es el 1",
+		"price": 200,
+		"status": true,
+		"stock": 25,
+		"category": "Catgoria 1",
+		"thumbnail": [],
+		"code": "abc123"
+	},
+	{
+		"id": 2,
+		"title": "Titulo Actualizado",
+		"description": "Este es un producto es el 2",
+		"price": 220,
+		"status": true,
+		"stock": 30,
+		"category": "Catgoria 2",
+		"thumbnail": [],
+		"code": "def456"
+	},
+	{
+		"id": 3,
+		"title": "Producto 3",
+		"description": "Este es un producto es el 3",
+		"price": 180,
+		"status": true,
+		"stock": 15,
+		"category": "Catgoria 1",
+		"thumbnail": [],
+		"code": "ghi789"
+	},
+	{
+		"id": 4,
+		"title": "Producto 4",
+		"description": "Este es un producto es el 4",
+		"price": 250,
+		"status": true,
+		"stock": 40,
+		"category": "Catgoria 2",
+		"thumbnail": [],
+		"code": "jkl012"
+	},
+	{
+		"id": 5,
+		"title": "Producto 5",
+		"description": "Este es un producto es el 5",
+		"price": 190,
+		"status": true,
+		"stock": 20,
+		"category": "Catgoria 1",
+		"thumbnail": [],
+		"code": "mno345"
+	},
+	{
+		"id": 6,
+		"title": "Producto 6",
+		"description": "Este es un producto es el 6",
+		"price": 280,
+		"status": true,
+		"stock": 10,
+		"category": "Catgoria 2",
+		"thumbnail": [],
+		"code": "pqr678"
+	},
+	{
+		"id": 7,
+		"title": "Producto 7",
+		"description": "Este es un producto es el 7",
+		"price": 210,
+		"status": true,
+		"stock": 35,
+		"category": "Catgoria 1",
+		"thumbnail": [],
+		"code": "stu901"
+	},
+	{
+		"id": 8,
+		"title": "Producto 8",
+		"description": "Este es un producto es el 8",
+		"price": 270,
+		"status": true,
+		"stock": 28,
+		"category": "Catgoria 2",
+		"thumbnail": [],
+		"code": "vwx234"
+	},
+	{
+		"id": "a74465f9-da42-4683-9da4-7710f103cc97",
+		"title": "Producto 9",
+		"description": "Este es un producto es el 9",
+		"price": 200,
+		"status": true,
+		"stock": 22,
+		"category": "Catgoria 1",
+		"thumbnail": [],
+		"code": "yzab567"
+	},
+	{
+		"id": "2aaf7f79-7714-46e4-adfb-58b837e35ad1",
+		"title": "Producto 10",
+		"description": "Este es un producto es el 10",
+		"price": 230,
+		"status": true,
+		"stock": 18,
+		"category": "Catgoria 2",
+		"thumbnail": [],
+		"code": "cdefg890"
+	},
+	{
+		"id": "b1242dc8-cf1c-4560-b899-de7fd5e59c45",
+		"title": "Producto 67890",
+		"description": "Este es un producto es el 2",
+		"price": 220,
+		"status": true,
+		"stock": 30,
+		"category": "Catgoria 2",
+		"thumbnail": [
+			"hola",
+			"dos"
+		],
+		"code": "aaaaaaa"
+	},
+	{
+		"id": "6b1a78e8-d933-41d5-ba71-dc9f4d365184",
+		"title": "Producto 67890",
+		"description": "Este es un producto es el 2",
+		"price": 220,
+		"status": true,
+		"stock": 30,
+		"category": "Catgoria 2",
+		"thumbnail": [
+			"hola",
+			"dos"
+		],
+		"code": "aaaa3aaa"
+	},
+	{
+		"id": "7715776e-7a6e-41a6-8baa-4927b9bf90f3",
+		"title": "Titulo prueba",
+		"description": "descripcion",
+		"price": "12345",
+		"status": "AVAILABLE",
+		"stock": "1",
+		"category": "prueba",
+		"code": "12"
+	},
+	{
+		"id": "57068c81-229a-4095-91bb-ec3f510c0c70",
+		"title": "titulito",
+		"description": "qwer",
+		"price": "1234567890",
+		"status": "AVAILABLE",
+		"stock": "2",
+		"category": "cat",
+		"code": "123"
+	},
+	{
+		"id": "5b25e8fe-b4fa-4fe4-a298-a84a2677dff4",
+		"title": "Titulo ",
+		"description": "qwe",
+		"price": "1",
+		"status": "1",
+		"stock": "1",
+		"category": "1",
+		"code": "123234567"
+	},
+	{
+		"id": "6d1f6288-9bff-4d8c-afe1-f89cfd7f5d2b",
+		"title": "Titulo ",
+		"description": "qwe",
+		"price": "1",
+		"status": "1",
+		"stock": "1",
+		"category": "1",
+		"code": "12323456777"
+	},
+	{
+		"id": "a5f6fdec-dd78-4ee2-bd55-54a5a402876a",
+		"title": "Titulo ",
+		"description": "qwe",
+		"price": "1",
+		"status": "1",
+		"stock": "1",
+		"category": "1",
+		"code": "123234567779"
+	},
+	{
+		"id": "9e4e67b9-d8ee-4626-8877-b2bcfb0bbe82",
+		"title": "5Titulo ",
+		"description": "qwe",
+		"price": "1",
+		"status": "1",
+		"stock": "1",
+		"category": "1",
+		"code": "1232345677790"
+	},
+	{
+		"id": "a2afd3b1-9af0-4232-93d6-0e5edb853f54",
+		"title": "1Titulo ",
+		"description": "qwe",
+		"price": "1",
+		"status": "1",
+		"stock": "1",
+		"category": "1",
+		"code": "12323456777901"
+	},
+	{
+		"id": "b1c51a07-a491-4440-bc78-80d1b3ed23be",
+		"title": "swal",
+		"description": "e",
+		"price": "1",
+		"status": "1",
+		"stock": "1",
+		"category": "1",
+		"code": "12345459"
+	},
+	{
+		"id": "075e24a7-1e71-421b-89f0-054071acb05d",
+		"title": "swal2",
+		"description": "e",
+		"price": "1",
+		"status": "1",
+		"stock": "1",
+		"category": "1",
+		"code": "12345459e"
+	},
+	{
+		"id": "80a071d8-4eb0-41eb-a063-1311c6621817",
+		"title": "swal2",
+		"description": "e",
+		"price": "1",
+		"status": "1",
+		"stock": "1",
+		"category": "1",
+		"code": "12345459e4"
+	}
+]
